@@ -52,8 +52,8 @@ def lines_are_parallel(line1_params, line2_params):
     a1_coefficient = line1_params[1]
     a2_coefficient = line2_params[1]
     try:
-        a1_coefficient = line1_params[1] / line1_params[0]
-        a2_coefficient = line2_params[1] / line2_params[0]
+        a1_coefficient /= line1_params[0]
+        a2_coefficient /= line2_params[0]
     except:
         pass
 
